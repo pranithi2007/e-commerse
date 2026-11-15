@@ -1,0 +1,30 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch DFA E-Commerce Server",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/backend/server.js",
+      "restart": true,
+      "console": "integratedTerminal"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Run DFA Unit Tests",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/backend/test-dfa.js",
+      "console": "integratedTerminal"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Seed Database",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/backend/seed.js",
+      "console": "integratedTerminal"
+    }
+  ]
+}
